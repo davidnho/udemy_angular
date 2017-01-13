@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="udemyAdmin">
+  <head>
+    <title>Udemy tutorials - admin area</title>
+  </head>
+  <body ng-controller="articleCtrl">
+
+    <div ng-repeat="article in articles | limitTo:1 " ng-bind="article.title"></div>
+
+    <ul>
+      <li ng-repeat="article in articles | limitTo:1:1">
+        <p>{{article.title}}</p>
+      </li>
+    </ul>
+
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers.js"></script>
+  </body>
+</html>
