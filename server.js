@@ -29,7 +29,7 @@ http.createServer( function (request, response) {
       // Send the response body 
       response.end();
    });   
-}).listen(process.env.PORT);
+}).listen(process.env.PORT || 3000);
 
 // Console will print the message
 console.log('Server running at http://127.0.0.1:' + process.env.PORT +'/');
