@@ -1,6 +1,6 @@
 angular.module('udemyAdmin').controller('articleCtrl', function($scope) {
   $scope.articles = [
-    { title: "Learn AngularJS" },
-    { title: "JavaScript closures explained!" }
+    { id:1,title: "Learn AngularJS" },
+    { id:2,title: "JavaScript closures explained!" }
   ];
 }); 
