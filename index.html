@@ -5,16 +5,17 @@
   </head>
   <body ng-controller="articleCtrl">
 
-    <div ng-repeat="article in articles | limitTo:1 " ng-bind="article.title"></div>
+    Number of articles to display: <input type="text" ng-model="numArticles" />
 
     <ul>
-      <li ng-repeat="article in articles | limitTo:1:1">
-        <p>{{article.title}}</p>
+      <li ng-repeat="article in articles | limitTo:numArticles">
+        {{article.title}}
       </li>
     </ul>
 
     <script src="angular.js"></script>
     <script src="app.js"></script>
     <script src="controllers.js"></script>
+    <script src="services.js"></script>
   </body>
-</html>
+</html> 
