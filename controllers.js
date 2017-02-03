@@ -1,8 +1,9 @@
 angular.module('udemyAdmin').controller('articleCtrl', function($scope, pageSize) {
   $scope.articles = [
-    { title: "Arduino Tutorial" },
-    { title: "After Effects Tutorial" },
-    { title: "Django Tutorial" }
+
+    { id:1,title: "Learn AngularJS" },
+    { id:2,title: "JavaScript closures explained!" }
+
   ];
 
   $scope.numArticles = pageSize;
