@@ -1,0 +1,16 @@
+<html>
+<body>
+    <div ng-app="angReview" ng-cloak="">
+        <div ng-controller="angCtrl">
+            <h3>Names</h3>
+            <li ng-repeat="name in names">
+                {{name.id}} | {{name.firstname}}
+            </li>
+        </div>
+    </div>
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers.js"></script>
+</body>
+
+</html>

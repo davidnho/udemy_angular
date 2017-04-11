@@ -1,0 +1,52 @@
+<html ng-app="angReview">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container" ng-controller="angCtrl">
+        <div>
+            <h3>Directives</h3>
+            <p></p>
+            <h5>{{getTitle()}}</h5>
+
+            <!--<button id="btnHi" class="btn btn-success">Say Hi!</button>-->
+        </div>
+        <div>
+            <table class="table table-bordered">
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <tr ng-repeat="name in names">
+                    <td>{{name.firstname}}</td>
+                    <td>{{name.lastname}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h3>Expression</h3>
+            <p>{{getCount()+1}}</p>
+            <p>{{getAge()}}</p>
+            
+        </div>
+    </div>
+
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script>
+        $('document').ready(function () {
+            $('#btnHi').click(function (e) {
+                // e.preventDefault();
+                alert("Hi");
+            });
+        });
+    </script>
+</body>
+
+</html>
